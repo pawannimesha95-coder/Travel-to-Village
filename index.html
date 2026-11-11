@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#086ca5">
+  <meta name="description" content="Discover authentic Sri Lankan village life, beautiful landscapes, local culture and unforgettable travel experiences with Travel to Village.">
+  <title>Travel to Village | Discover the Real Sri Lanka</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--blue:#0875b9;--deep:#07527f;--green:#18813c;--ink:#173044;--muted:#607482;--cream:#f6faf6;--white:#fff;--shadow:0 18px 50px rgba(5,54,82,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:#fff;line-height:1.6}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.container{width:min(1140px,calc(100% - 40px));margin:auto}
+    .topbar{background:#064f7c;color:#eaf7ff;font-size:13px;padding:8px 0}.topbar .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);box-shadow:0 3px 18px rgba(0,0,0,.06)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--deep)}.brand img{width:64px;height:64px;object-fit:contain;border-radius:50%}.brand span{font-size:18px;line-height:1.1}.brand small{display:block;color:var(--green);font-size:10px;letter-spacing:2px;margin-top:5px}.links{display:flex;align-items:center;gap:25px;font-size:14px;font-weight:600}.links a:hover{color:var(--green)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:999px;background:var(--green);color:#fff;font-weight:700;border:0;cursor:pointer;transition:.2s}.nav-cta:hover,.btn:hover{transform:translateY(-2px);box-shadow:0 9px 22px #18813c44}.menu{display:none;background:none;border:0;font-size:27px;color:var(--deep)}
+    .hero{min-height:570px;display:flex;align-items:center;color:white;position:relative;background:linear-gradient(90deg,rgba(2,48,77,.82),rgba(2,62,90,.48),rgba(2,62,90,.12)),url("assets/cover.jfif") center/cover no-repeat}.hero:after{content:"";position:absolute;inset:auto 0 0;height:90px;background:linear-gradient(transparent,#fff)}.hero-content{position:relative;z-index:1;max-width:650px;padding:90px 0 120px}.eyebrow{display:inline-block;color:#d9ffdf;background:#ffffff1c;border:1px solid #ffffff66;border-radius:99px;padding:7px 14px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:700}.hero h1{font:800 clamp(42px,6vw,70px)/1.08 "Playfair Display",serif;margin:22px 0 18px}.hero h1 em{color:#b7f0a9;font-style:normal}.hero p{font-size:18px;max-width:570px;color:#f0f8fb;margin:0 0 30px}.btn-light{background:#fff;color:var(--deep);margin-left:10px}.hero-note{margin-top:26px;font-size:13px;color:#e5f4fa}
+    section{padding:82px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 42px}.kicker{color:var(--green);font-weight:800;font-size:12px;letter-spacing:2px;text-transform:uppercase}.section-head h2,.about-copy h2{font:700 clamp(30px,4vw,43px)/1.2 "Playfair Display",serif;color:var(--deep);margin:10px 0 13px}.section-head p{color:var(--muted);margin:0}.about{background:var(--cream)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-logo{background:#fff;border-radius:28px;padding:28px;box-shadow:var(--shadow);max-width:440px;margin:auto}.about-logo img{width:100%;max-height:390px;object-fit:contain}.about-copy p{color:var(--muted)}.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}.checks span{font-weight:700;color:var(--deep)}.checks span:before{content:"✓";color:var(--green);font-weight:900;margin-right:9px}
+    .destinations{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.destination{border-radius:20px;overflow:hidden;background:#fff;box-shadow:var(--shadow);transition:.25s}.destination:hover{transform:translateY(-6px)}.destination .photo{height:190px;background:linear-gradient(135deg,#c9e5d0,#6da98b);display:grid;place-items:center;color:#fff;font-size:44px}.destination .photo img{width:100%;height:100%;object-fit:cover}.destination .info{padding:19px 20px}.destination h3{margin:0 0 5px;color:var(--deep);font:700 22px "Playfair Display",serif}.destination p{margin:0;color:var(--muted);font-size:14px}
+    .experiences{background:#f3f8fb}.experience-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.experience{padding:25px 20px;border-radius:18px;background:white;box-shadow:0 8px 25px rgba(5,54,82,.06)}.experience .icon{font-size:30px}.experience h3{font-size:16px;margin:12px 0 5px;color:var(--deep)}.experience p{font-size:13px;color:var(--muted);margin:0}
+    .packages{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.package{border:1px solid #e5edf0;border-radius:20px;padding:25px;display:flex;flex-direction:column}.package .tag{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--green);font-weight:800}.package h3{font:700 23px "Playfair Display",serif;color:var(--deep);margin:8px 0}.package p{color:var(--muted);font-size:14px;flex:1}.package .btn{align-self:flex-start;margin-top:12px}
+    .gallery{background:var(--cream)}.gallery-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-template-rows:190px 190px;gap:14px}.gallery-tile{border-radius:18px;background:linear-gradient(135deg,#0b6e9d,#69a85d);display:grid;place-items:center;color:white;font-size:14px;font-weight:700;overflow:hidden;position:relative}.gallery-tile:first-child{grid-row:span 2}.gallery-tile img{width:100%;height:100%;object-fit:cover}.gallery-tile span{position:absolute;bottom:0;left:0;right:0;padding:22px 15px 13px;background:linear-gradient(transparent,#0009)}
+    .contact{background:linear-gradient(135deg,#07527f,#087db4);color:#fff}.contact .section-head h2{color:#fff}.contact .section-head p{color:#d7edf6}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:start}.contact-card{background:#ffffff12;border:1px solid #ffffff35;border-radius:22px;padding:28px}.contact-card h3{font:700 24px "Playfair Display",serif;margin-top:0}.contact-line{padding:12px 0;border-bottom:1px solid #ffffff2c}.contact-line:last-child{border:0}.contact-line small{display:block;color:#bfe4f3;font-size:11px;text-transform:uppercase;letter-spacing:1px}.contact-form{background:#fff;color:var(--ink);padding:28px;border-radius:22px}.contact-form h3{margin:0 0 18px;color:var(--deep)}label{display:block;font-size:13px;font-weight:700;margin:12px 0 6px}input,textarea,select{width:100%;padding:13px 14px;border:1px solid #dce6eb;border-radius:10px;font:inherit;background:#fbfdfd}textarea{min-height:110px;resize:vertical}.contact-form .btn{margin-top:16px;width:100%}.form-note{font-size:12px;color:var(--muted);margin:10px 0 0}
+    footer{background:#043b5e;color:#d8eaf2;padding:35px 0 20px}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}.footer-brand{font:700 23px "Playfair Display",serif;color:white}.footer-brand small{display:block;font:500 12px "DM Sans",sans-serif;color:#a8d8c0}.copyright{border-top:1px solid #ffffff24;margin-top:25px;padding-top:18px;font-size:12px;color:#a9c7d5;text-align:center}
+    .whatsapp{position:fixed;right:22px;bottom:22px;z-index:30;width:58px;height:58px;border-radius:50%;background:#20c568;color:#fff;display:grid;place-items:center;font-size:28px;box-shadow:0 8px 25px #0003}.whatsapp:hover{transform:scale(1.06)}
+    @media(max-width:850px){.links{display:none;position:absolute;top:82px;left:0;right:0;background:white;padding:20px 25px;box-shadow:var(--shadow);flex-direction:column;align-items:flex-start}.links.open{display:flex}.menu{display:block}.nav-cta{display:none}.about-grid,.contact-grid{grid-template-columns:1fr}.experience-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:620px){.container{width:min(100% - 30px,1140px)}.topbar .container{justify-content:center}.hero{min-height:540px;background-position:58% center}.hero-content{padding:75px 0 115px}.hero p{font-size:16px}.btn-light{margin:10px 0 0}.destinations,.packages{grid-template-columns:1fr}.experience-grid{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:160px 160px 160px}.gallery-tile:first-child{grid-row:span 2}.gallery-tile:last-child{grid-column:span 2}.checks{grid-template-columns:1fr}.nav{height:72px}.brand img{width:54px;height:54px}.links{top:72px}section{padding:65px 0}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>🌿 Discover authentic Sri Lanka</span><span>📍 Sri Lanka &nbsp; | &nbsp; ✉ pawannimesha45@gmail.com</span></div></div>
+  <header><div class="container nav">
+    <a class="brand" href="#home"><img src="assets/logo.jpg" alt="Travel to Village logo"><span>TRAVEL TO VILLAGE<small>SRI LANKA</small></span></a>
+    <nav class="links" id="navLinks"><a href="#home">Home</a><a href="#about">About</a><a href="#destinations">Destinations</a><a href="#experiences">Experiences</a><a href="#packages">Tours</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
+    <a class="nav-cta" href="#contact">Plan Your Trip ↗</a><button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+  </div></header>
+  <main>
+    <section class="hero" id="home"><div class="container"><div class="hero-content">
+      <span class="eyebrow">Feel the heart of Sri Lanka</span>
+      <h1>Discover the <em>Real Beauty</em> of Sri Lanka</h1>
+      <p>From peaceful village paths to breathtaking beaches and green mountain escapes — experience the island beyond the ordinary.</p>
+      <a class="btn" href="#destinations">Explore Destinations&nbsp; →</a><a class="btn btn-light" href="#contact">Contact Us</a>
+      <div class="hero-note">Local culture · Nature · Village life · Unforgettable journeys</div>
+    </div></div></section>
+
+    <section class="about" id="about"><div class="container about-grid">
+      <div class="about-logo"><img src="assets/logo.jpg" alt="Travel to Village brand logo"></div>
+      <div class="about-copy"><span class="kicker">Welcome to Travel to Village</span><h2>Travel deeper. Feel more. Come back for more.</h2>
+        <p>Travel to Village invites you to discover the authentic charm of Sri Lanka. Explore scenic countryside, meet local communities, enjoy traditional flavours and find the special places that make every journey memorable.</p>
+        <p>Whether you love nature, culture, beaches or adventure, let us help you plan a journey filled with real experiences.</p>
+        <div class="checks"><span>Authentic experiences</span><span>Beautiful destinations</span><span>Local culture</span><span>Memorable adventures</span></div>
+        <a class="btn" href="#contact">Start Exploring</a>
+      </div>
+    </div></section>
+
+    <section id="destinations"><div class="container"><div class="section-head"><span class="kicker">Explore the island</span><h2>Beautiful Places to Discover</h2><p>Find inspiration for your next Sri Lankan journey — from misty highlands to golden shores.</p></div>
+      <div class="destinations">
+        <article class="destination"><div class="photo">⛰️</div><div class="info"><h3>Ella</h3><p>Misty mountains, scenic train journeys and spectacular viewpoints.</p></div></article>
+        <article class="destination"><div class="photo">🪨</div><div class="info"><h3>Sigiriya</h3><p>Ancient heritage, dramatic rock landscapes and village surroundings.</p></div></article>
+        <article class="destination"><div class="photo">🏛️</div><div class="info"><h3>Kandy</h3><p>Hill-country beauty, history and rich cultural traditions.</p></div></article>
+        <article class="destination"><div class="photo">🏖️</div><div class="info"><h3>Galle & the South</h3><p>Coastal charm, heritage streets and relaxing ocean views.</p></div></article>
+        <article class="destination"><div class="photo">🌴</div><div class="info"><h3>Mirissa</h3><p>Tropical beaches, palm-lined shores and ocean adventures.</p></div></article>
+        <article class="destination"><div class="photo">🌿</div><div class="info"><h3>Nuwara Eliya</h3><p>Cool mountain air, tea country and beautiful green landscapes.</p></div></article>
+      </div>
+    </div></section>
+
+    <section class="experiences" id="experiences"><div class="container"><div class="section-head"><span class="kicker">More than sightseeing</span><h2>Experience Village Life</h2><p>Discover the traditions, flavours and natural beauty that make Sri Lanka unique.</p></div>
+      <div class="experience-grid">
+        <article class="experience"><div class="icon">🌾</div><h3>Village Tours</h3><p>Explore peaceful village paths and everyday rural life.</p></article>
+        <article class="experience"><div class="icon">🍛</div><h3>Traditional Food</h3><p>Taste authentic Sri Lankan flavours and local cooking.</p></article>
+        <article class="experience"><div class="icon">🚣</div><h3>Nature & Adventure</h3><p>Enjoy outdoor activities, waterways and scenic trails.</p></article>
+        <article class="experience"><div class="icon">🎭</div><h3>Culture & Heritage</h3><p>Connect with local customs, crafts and traditions.</p></article>
+        <article class="experience"><div class="icon">🐘</div><h3>Wildlife</h3><p>Discover Sri Lanka's remarkable natural habitats.</p></article>
+        <article class="experience"><div class="icon">🌊</div><h3>Beaches</h3><p>Unwind along beautiful tropical coastlines.</p></article>
+        <article class="experience"><div class="icon">💧</div><h3>Waterfalls</h3><p>Find refreshing cascades tucked into green landscapes.</p></article>
+        <article class="experience"><div class="icon">🚜</div><h3>Rural Experiences</h3><p>See paddy fields and the rhythm of countryside life.</p></article>
+      </div>
+    </div></section>
+
+    <section id="packages"><div class="container"><div class="section-head"><span class="kicker">Your journey, your way</span><h2>Tour Ideas & Packages</h2><p>Tell us what kind of trip you dream about. We'll help you enquire about an experience.</p></div>
+      <div class="packages">
+        <article class="package"><span class="tag">Culture & countryside</span><h3>Village Discovery</h3><p>Spend time exploring traditional village life, local food, paddy fields and the peaceful countryside.</p><a class="btn" href="#contact" data-package="Village Discovery">Enquire Now</a></article>
+        <article class="package"><span class="tag">Nature escape</span><h3>Nature & Waterfalls</h3><p>Enjoy scenic landscapes, refreshing waterfalls, nature walks and memorable photo stops.</p><a class="btn" href="#contact" data-package="Nature & Waterfalls">Enquire Now</a></article>
+        <article class="package"><span class="tag">Coast & relaxation</span><h3>Southern Coast Escape</h3><p>Discover beautiful beaches, coastal villages, local attractions and laid-back island life.</p><a class="btn" href="#contact" data-package="Southern Coast Escape">Enquire Now</a></article>
+      </div>
+    </div></section>
+
+    <section class="gallery" id="gallery"><div class="container"><div class="section-head"><span class="kicker">Island moments</span><h2>A Little Taste of Sri Lanka</h2><p>Every corner has a story. Your next favourite memory is waiting.</p></div>
+      <div class="gallery-grid">
+        <div class="gallery-tile"><span>Village landscapes</span></div><div class="gallery-tile"><span>Green highlands</span></div><div class="gallery-tile"><span>Tropical beaches</span></div><div class="gallery-tile"><span>Local culture</span></div><div class="gallery-tile"><span>Nature adventures</span></div>
+      </div>
+    </div></section>
+
+    <section class="contact" id="contact"><div class="container"><div class="section-head"><span class="kicker" style="color:#b8efb1">Let's plan your journey</span><h2>Contact Travel to Village</h2><p>Have a destination in mind? Send us your enquiry and let's start planning.</p></div>
+      <div class="contact-grid">
+        <div class="contact-card"><h3>Get in touch</h3>
+          <div class="contact-line"><small>Phone / WhatsApp</small><a href="tel:+94773164386">+94 77 316 4386</a></div>
+          <div class="contact-line"><small>Email</small><a href="mailto:pawannimesha45@gmail.com">pawannimesha45@gmail.com</a></div>
+          <div class="contact-line"><small>Location</small>Sri Lanka</div>
+          <div class="contact-line"><small>Our promise</small>You'll Come Back For More</div>
+        </div>
+        <form class="contact-form" id="enquiryForm"><h3>Send a tour enquiry</h3>
+          <label for="name">Your name</label><input id="name" name="name" placeholder="Enter your name" required>
+          <label for="email">Email or contact number</label><input id="email" name="email" placeholder="How can we contact you?" required>
+          <label for="interest">What are you interested in?</label><select id="interest" name="interest"><option>Village Discovery</option><option>Nature & Waterfalls</option><option>Southern Coast Escape</option><option>Custom Sri Lanka Tour</option></select>
+          <label for="message">Your message</label><textarea id="message" name="message" placeholder="Tell us your preferred dates, group size and places you'd like to visit..."></textarea>
+          <button class="btn" type="submit">Send Enquiry on WhatsApp ↗</button>
+          <p class="form-note">Your message will open in WhatsApp so you can review and send it.</p>
+        </form>
+      </div>
+    </div></section>
+  </main>
+  <footer><div class="container"><div class="footer-row"><div class="footer-brand">TRAVEL TO VILLAGE<small>SRI LANKA · YOU'LL COME BACK FOR MORE</small></div><div>Call: <a href="tel:+94773164386">077 316 4386</a> &nbsp; · &nbsp; <a href="mailto:pawannimesha45@gmail.com">Email us</a></div><div><a href="#home">Back to top ↑</a></div></div><div class="copyright">© <span id="year"></span> Travel to Village. All rights reserved.</div></div></footer>
+  <a class="whatsapp" href="https://wa.me/94773164386" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">☏</a>
+  <script>
+    const menuBtn=document.getElementById('menuBtn'), navLinks=document.getElementById('navLinks');
+    menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+    document.getElementById('year').textContent=new Date().getFullYear();
+    document.querySelectorAll('[data-package]').forEach(btn=>btn.addEventListener('click',()=>{document.getElementById('interest').value=btn.dataset.package;}));
+    document.getElementById('enquiryForm').addEventListener('submit',e=>{
+      e.preventDefault();
+      const d=new FormData(e.target);
+      const msg=`Hello Travel to Village!%0AName: ${encodeURIComponent(d.get('name'))}%0AContact: ${encodeURIComponent(d.get('email'))}%0AInterested in: ${encodeURIComponent(d.get('interest'))}%0AMessage: ${encodeURIComponent(d.get('message')||'Please contact me about this tour.')}`;
+      window.open(`https://wa.me/94773164386?text=${msg}`,'_blank','noopener');
+    });
+  </script>
+</body>
+</html>
